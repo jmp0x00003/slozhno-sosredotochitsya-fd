@@ -5,8 +5,56 @@
 */
 
 :root.theme-dark {
+  --background-image: url(/images/cover-image-dark.png);
+  --background-color: #000532;
+  --color-title: #db00ff;
+  --accent-color: #FF0070;
+  --decor-color: var(--accent-color);
+  --text-decor-color: #000028;
+  --main-font-color: #f1b2ce;
+
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+}
+
+:root.theme-dark .rec_element {
+  display: block;
+  color: var(--accent-color);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-normal);
+}
+
+.header {
+  position: relative;
+}
+
+.rec_element {
+  position: absolute;
+
+  top: 25px;
+  right: 10px;
+
+  margin-right: 18px;
+
+  grid-row: 1;
+  text-transform: uppercase;
+
+  justify-self: flex-end;
+  align-items: center;
+}
+
+.rec_element::after {
+  content: '';
+  position: absolute;
+
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color);
+  width: 9px;
+  height: 9px;
+
+  top: 7px;
+  right: -19px;
 }
