@@ -32,15 +32,11 @@
 
 .rec_element {
   position: absolute;
-
-  top: 25px;
-  right: 10px;
-
+  top: 12px;
+  right: 11px;
   margin-right: 18px;
-
   grid-row: 1;
   text-transform: uppercase;
-
   justify-self: flex-end;
   align-items: center;
 }
@@ -48,13 +44,11 @@
 .rec_element::after {
   content: '';
   position: absolute;
-
   border-radius: 50%;
   background-color: var(--accent-color);
   box-shadow: 0 0 4px 2px var(--accent-color);
   width: 9px;
   height: 9px;
-
   top: 7px;
-  right: -19px;
+  right: -21px;
 }

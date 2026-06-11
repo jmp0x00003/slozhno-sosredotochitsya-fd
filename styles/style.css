@@ -1,5 +1,6 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+
 button:focus-visible {
   border: 1px solid initial;
 }
@@ -27,7 +28,6 @@ button {
 }
 
 .page {
-  padding-top: 10px;
   padding-inline: 10px;
   background: var(--background-image) center / cover no-repeat;
   background-color: var(--background-color);
@@ -49,7 +49,7 @@ button {
 .decorated-zone::before {
   content: '';
   position: absolute;
-  top: 21px;
+  top: 12px;
   right: 0px;
   width: 25px;
   height: 25px;
@@ -60,7 +60,7 @@ button {
 .decorated-zone::after {
   content: '';
   position: absolute;
-  bottom: 18px;
+  bottom: 10px;
   left: 0px;
   width: 25px;
   height: 25px;
@@ -71,7 +71,7 @@ button {
 .header__theme-menu {
   justify-self: flex-end;
   align-self: center;
-  margin-right: 7px;
+  margin-right: 2px;
   padding-top: 11px;
 }
 
@@ -80,12 +80,13 @@ button {
 }
 
 .header__theme-menu-item:not(:last-child) {
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .header__theme-menu-button {
   border: none;
   padding-block: 3px;
+  padding-inline: 11px;
   color: var(--accent-color);
   font-family: var(--font-family);
   font-weight: var(--font-weight-normal);
@@ -199,6 +200,14 @@ footer {
     margin-bottom: 10px;
   }
 
+  .decorated-zone::before {
+    top: 24px;
+  }
+
+  .decorated-zone::after {
+    bottom: 23px;
+  }
+
   .header__theme-menu {
     grid-column: 2;
     grid-row: 1;
@@ -219,13 +228,13 @@ footer {
 
   .content_section {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1.1fr 1fr 1fr;
     margin-bottom: 10px;
     padding-top: 20px;
   }
 
   .section-title {
-    padding-right: 25px;
+    padding-right: 21px;
   }
 
   .content_section-reasons .section-title {
@@ -261,6 +270,11 @@ footer {
   .content_section-advises .content_section-text {
     grid-column: 2 / 4;
   }
+
+  .subtitle-bg {
+    margin-bottom: 10px;
+  }
+  
   
   .content_section-cards .subtitle-bg {
     grid-column: 1 / 4;
@@ -313,6 +327,14 @@ footer {
     margin-bottom: 59px;
   }
 
+  img {
+    margin-bottom: 0px;
+  }
+
+  footer {
+    margin-top: 0;
+  }
+
 }
 
 @media (width >= 1024px) {
@@ -320,19 +342,19 @@ footer {
   .header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 39px;
   }
 
-  .header__theme-menu { 
+  .header__theme-menu {
     grid-column: 1 / -1;
      justify-self: center;
     align-self: flex-start;
-    margin-top: 10px;
+    margin-top: 6px;
   }
-
 
   .header__theme-menu-list {
     display: flex;
-    gap: 20px;
+    gap: 14px;
   }
 
   .content-title {
@@ -346,6 +368,7 @@ footer {
   }
 
   .content_section {
+    grid-template-columns: 1.03fr 1fr 1fr;
     margin-top: 30px;
     margin-bottom: 39px;
   }
@@ -364,7 +387,7 @@ footer {
 
   .content_section-causes-article {
     grid-column: 1;
-    grid-row: 2; 
+    grid-row: 2;
   }
 
   .content_section-causes-article:nth-child(2) {
