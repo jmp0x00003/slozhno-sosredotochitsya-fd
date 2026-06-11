@@ -32,7 +32,7 @@ button {
 }
 
 .page {
-  padding-inline: 10px;
+  margin-inline: 10px;
   background: var(--background-image) center / cover no-repeat;
   background-color: var(--background-color);
   background-attachment: fixed;
@@ -196,7 +196,7 @@ footer {
 
 @media (width >= 768px) {
   .page {
-    padding-inline: 20px;
+    margin-inline: 20px;
   }
 
   .header {
