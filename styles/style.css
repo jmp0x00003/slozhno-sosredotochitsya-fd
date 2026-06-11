@@ -1,5 +1,8 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+body {
+  margin: 0;
+}
 
 button:focus-visible {
   border: 1px solid initial;
