@@ -9,6 +9,7 @@
   --background-color: #FFF1F7;
   --color-title: #ffc2e6;
   --accent-color: #353430;
+  --accent-color-rgb: 53 52 48;
   --decor-color: #ff8dcb;
   --text-decor-color: var(--accent-color);
   --main-font-color: var(--accent-color);
@@ -21,12 +22,20 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --background-image: url(/images/cover-image-light.png);
+  --background-image: url(/images/cover-image-light.png);
   --background-color: #FFF1F7;
   --color-title: #ffc2e6;
   --accent-color: #353430;
   --decor-color: #ff8dcb;
   --text-decor-color: var(--accent-color);
   --main-font-color: var(--accent-color);
+  }
+
+  .theme-auto {
+    --accent-color-rgb: 53 52 48;
+  }
+
+  .rec_element {
+    display: none;
   }
 }

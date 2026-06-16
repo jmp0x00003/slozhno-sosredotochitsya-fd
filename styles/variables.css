@@ -3,19 +3,21 @@
   и их переопределение под различные устройства
 */
 
-:root {
-  --font-family: 'IBM Plex mono', sans-serif;
-  --font-weight-bold: bold;
-  --font-weight-normal: normal;
-  --font-size-small: 18px;
+  :root {
+    --font-family: 'IBM Plex mono', sans-serif;
+    --font-weight-bold: bold;
+    --font-weight-normal: normal;
+    --font-size-small: 18px;
 
-  /* переменные темной темы */
+    /* переменные темной темы */
 
-  --background-image: url(/images/cover-image-dark.png);
-  --background-color: #000532;
-  --color-title: #db00ff;
-  --accent-color: #FF0070;
-  --decor-color: var(--accent-color);
-  --text-decor-color: #000028;
-  --main-font-color: #f1b2ce;
-}
+    --background-image: url(/images/cover-image-dark.png);
+    --background-color: #000532;
+    --color-title: #db00ff;
+    --accent-color: #FF0070;
+    --accent-color-rgb: 255 0 112;
+    --decor-color: var(--accent-color);
+    --text-decor-color: #000028;
+    --main-font-color: #f1b2ce;
+
+  }

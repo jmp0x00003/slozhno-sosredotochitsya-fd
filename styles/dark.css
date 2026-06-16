@@ -9,6 +9,7 @@
   --background-color: #000532;
   --color-title: #db00ff;
   --accent-color: #FF0070;
+  --accent-color-rgb: 255 0 112;
   --decor-color: var(--accent-color);
   --text-decor-color: #000028;
   --main-font-color: #f1b2ce;
@@ -19,26 +20,18 @@
   */
 }
 
-:root.theme-dark .rec_element {
-  display: block;
-  color: var(--accent-color);
-  font-family: var(--font-family);
-  font-weight: var(--font-weight-normal);
-}
-
-.header {
-  position: relative;
-}
-
 .rec_element {
   position: absolute;
   top: 12px;
-  right: 11px;
+  right: 22px;
   margin-right: 18px;
   grid-row: 1;
   text-transform: uppercase;
   justify-self: flex-end;
   align-items: center;
+  font-family: var(--font-family), sans-serif;
+  font-weight: var(--font-weight-normal);
+  color: var(--accent-color);
 }
 
 .rec_element::after {
@@ -51,4 +44,18 @@
   height: 9px;
   top: 7px;
   right: -21px;
+}
+
+@media (width >= 768px) {
+  .rec_element {
+    top: 23px;
+    right: 30px;
+  }
+}
+
+@media (width >= 1024px) {
+  .rec_element {
+    top: 21px;
+    right: 32px; 
+  }
 }
