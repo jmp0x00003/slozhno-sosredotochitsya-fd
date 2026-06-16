@@ -46,6 +46,13 @@
   right: -21px;
 }
 
+.theme-dark .rec_element {
+  display: block;
+  color: var(--accent-color);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-normal);
+}
+
 @media (width >= 768px) {
   .rec_element {
     top: 23px;

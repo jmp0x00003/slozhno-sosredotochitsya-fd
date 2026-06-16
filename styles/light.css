@@ -20,6 +20,10 @@
   */
 }
 
+.theme-light .rec_element {
+  display: none;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
   --background-image: url(/images/cover-image-light.png);
