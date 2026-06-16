@@ -21,7 +21,6 @@ a {
 
 a:focus-visible,
 a:focus {
-  outline: none;
   outline: 1px solid var(--main-font-color);
 }
 
